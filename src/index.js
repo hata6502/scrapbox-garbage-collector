@@ -1,3 +1,5 @@
+#!/usr/bin/env node
+
 const { parse } = require("@progfay/scrapbox-parser");
 const fs = require("fs");
 
@@ -52,12 +54,17 @@ const main = async () => {
   }
 
   // TODO: エスケープ
-  const userCSS = `code: style.css
-    ${links
-      .map((link) => `.page-list-item[data-page-title="${link}"]`)
-      .join()} {
-      display: none !important;
-    }`;
+  const userCSS = `garbages
+code: index.css
+  .quick-launch .project-home .title::after {
+    content: " garbages";
+  }
+  
+  ${links
+    .map((link) => `.page-list-item[data-page-title="${link}"]`)
+    .join()} {
+    display: none !important;
+  }`;
 
   console.log(userCSS);
 };

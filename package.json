@@ -2,16 +2,19 @@
   "name": "scrapbox-garbage-collector",
   "version": "1.0.0",
   "description": "Scrapbox garbage collector.",
+  "homepage": "https://github.com/hata6502/scrapbox-garbage-collector#readme",
+  "bugs": {
+    "url": "https://github.com/hata6502/scrapbox-garbage-collector/issues"
+  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/hata6502/scrapbox-garbage-collector.git"
   },
-  "author": "Tomoyuki Hata",
   "license": "MIT",
-  "bugs": {
-    "url": "https://github.com/hata6502/scrapbox-garbage-collector/issues"
+  "author": "Tomoyuki Hata",
+  "bin": {
+    "scrapbox-garbage-collector": "src/index.js"
   },
-  "homepage": "https://github.com/hata6502/scrapbox-garbage-collector#readme",
   "dependencies": {
     "@progfay/scrapbox-parser": "github:hata6502/scrapbox-parser#for-scrapbox-garbage-collector"
   }

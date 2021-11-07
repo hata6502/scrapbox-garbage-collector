@@ -54,19 +54,24 @@ const main = async () => {
   }
 
   // TODO: エスケープ
-  const userCSS = `garbages
-code: index.css
-  .quick-launch .project-home .title::after {
+  const userCSS = `  .quick-launch .project-home .title::after {
     content: " garbages";
   }
   
-  ${links
-    .map((link) => `.page-list-item[data-page-title="${link}"]`)
-    .join()} {
+  ${links.map((link) => `.page-list-item[data-page-title="${link}"]`).join()} {
     display: none !important;
   }`;
 
-  console.log(userCSS);
+  const pageData = {
+    pages: [
+      {
+        title: "garbages",
+        lines: ["garbages", "code: index.css", ...userCSS.split("\n")],
+      },
+    ],
+  };
+
+  console.log(JSON.stringify(pageData));
 };
 
 main();

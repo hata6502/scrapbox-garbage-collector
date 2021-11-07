@@ -10,7 +10,7 @@
     "type": "git",
     "url": "git+https://github.com/hata6502/scrapbox-garbage-collector.git"
   },
-  "license": "MIT",
+  "license": "CC0-1.0",
   "author": "Tomoyuki Hata",
   "bin": {
     "scrapbox-garbage-collector": "src/index.js"

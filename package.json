@@ -1,6 +1,6 @@
 {
   "name": "scrapbox-garbage-collector",
-  "version": "2.0.1",
+  "version": "2.0.2",
   "description": "Scrapbox garbage collector.",
   "homepage": "https://github.com/hata6502/scrapbox-garbage-collector#readme",
   "bugs": {
@@ -16,6 +16,6 @@
     "scrapbox-garbage-collector": "src/index.js"
   },
   "dependencies": {
-    "@progfay/scrapbox-parser": "github:hata6502/scrapbox-parser#for-scrapbox-garbage-collector"
+    "@progfay/scrapbox-parser": "^7.2.0"
   }
 }
